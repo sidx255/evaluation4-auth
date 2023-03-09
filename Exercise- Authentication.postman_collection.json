@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "e6c423a0-2aeb-499f-abd9-1871774f9b0a",
+		"name": "Exercise: Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19476344"
+	},
+	"item": [
+		{
+			"name": "POST: Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"siddharth\",\n    \"password\": \"sidx255\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5501/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5501",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: Verify Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"siddharth\",\n    \"password\": \"sidx255\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5501/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5501",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: Verify Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5501/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5501",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
